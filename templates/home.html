@@ -1,7 +1,9 @@
-<h1>Movie Database</h1>
-<p>
-<h3><a href="/movies">View Full Database</a><h3></p>
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/styles/styles.css">
+</head>
+<h1 class="center">Movie Database</h1>
 <br>
+<div class="center">
 <h4>Add movie</h4>
 <form action = "{{ url_for('addmovie') }}" method = "POST">
   Name<br>
@@ -13,5 +15,6 @@
   Top Actor<br>
   <input type = "text" name = "actor" /><br>
   <input type = "submit" value = "submit" /><br>
-</form>
+</form></div>
 <br>
+<h3 class="center" ><a href="/movies">View Full Database</a><h3></p>
